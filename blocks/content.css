@@ -66,6 +66,12 @@
   color: red;
 }
 
+.footer__copyright {
+  justify-content: center;
+  display: flex;
+  color: red;
+}
+
 @keyframes animate {
   0% {
     transform: rotateY(0deg);
