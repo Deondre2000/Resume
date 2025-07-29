@@ -1,0 +1,38 @@
+.page {
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(15, 15, 15));
+  min-height: 100vh;
+  position: relative;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: twinkle 2s infinite ease-in-out, movestars 5s infinite ease-in;
+  z-index: -1;
+}
+
+@keyframes twinkle {
+  100%,
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes movestars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
+

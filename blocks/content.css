@@ -1,0 +1,117 @@
+.projects {
+  padding: 0px;
+  justify-content: space-around;
+  display: flex;
+  position: relative;
+}
+
+.projects__image {
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.projects__websites {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  animation: animate 20s linear infinite;
+}
+
+.info {
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.info__intro {
+  color: red;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-content: center;
+  align-items: center;
+  max-width: 200px;
+}
+
+.info__bioagraphy {
+  text-align: center;
+  color: red;
+  font-size: 25px;
+  max-width: 300px;
+}
+
+.info__resume-pic {
+  width: 231px;
+  height: 279px;
+  border-radius: 18%;
+}
+
+.skill__sets {
+  font-size: 26px;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  color: red;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .projects__image {
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+  }
+
+  .projects__websites {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    animation: animate 20s linear infinite;
+  }
+
+  .info {
+    flex-direction: column;
+    padding: 10px 0px 0px;
+  }
+  .info__intro {
+    font-size: 18px;
+  }
+
+  .info__bioagraphy {
+    font-size: 18px;
+  }
+
+  .info__resume-pic {
+    width: 173px;
+    height: 154px;
+  }
+
+  .skill__sets {
+    font-size: 17px;
+  }
+}
