@@ -10,12 +10,21 @@
   margin: 0px;
   color: red;
   text-align: center;
+  font-size: 50px;
 }
 
 .title {
+  background: linear-gradient(90deg, #000000, #4c4141);
+  margin-left: 80px;
+  margin-right: 80px;
+  justify-content: center;
+  display: flex;
+  border: 10px, solid, red;
   margin-top: 0px;
   color: red;
   text-align: center;
+  flex-wrap: wrap;
+  box-shadow: 6px 8px 18px 4px rgb(255 255 255);
 }
 
 .nav__links {
@@ -29,6 +38,7 @@
 }
 
 .nav__info {
+  padding-right: 20px;
   flex-direction: column;
   display: flex;
   font-size: 24px;

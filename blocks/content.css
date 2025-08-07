@@ -22,9 +22,13 @@
   animation: animate 20s linear infinite;
 }
 
+.projects__websites:hover {
+  transform: scale(1000px);
+}
+
 .info {
   justify-content: space-evenly;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   display: flex;
   align-items: center;
@@ -39,19 +43,19 @@
   justify-content: end;
   align-content: center;
   align-items: center;
-  max-width: 200px;
+  max-width: 50vw;
 }
 
 .info__bioagraphy {
   text-align: center;
   color: red;
   font-size: 25px;
-  max-width: 300px;
+  max-width: 50vw;
 }
 
 .info__resume-pic {
-  width: 231px;
-  height: 279px;
+  width: 35vw;
+  height: 35vh;
   border-radius: 18%;
 }
 
