@@ -10,10 +10,10 @@ function createStars() {
     star.style.width = `${size}px`;
     star.style.height = `${size}px`;
     star.style.left = `${Math.random() * 100}vw`;
-    star.style.top = `${Math.random() * 150}vh`;
+    star.style.top = `${Math.random() * 100}vh`;
 
     // random twinkle speed
-    star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+    star.style.animationDuration = `${Math.random() * 2 + 10}s`;
 
     document.body.appendChild(star);
   }
