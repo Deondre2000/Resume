@@ -1,11 +1,12 @@
-.projects {
+.content_projects {
   padding: 0px;
   justify-content: space-around;
   display: flex;
   position: relative;
+  background: transparent;
 }
 
-.projects__image {
+.content_projects_image {
   justify-content: center;
   display: flex;
   border-radius: 50%;
@@ -13,7 +14,7 @@
   height: 300px;
 }
 
-.projects__websites {
+.content_projects_websites {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -22,20 +23,21 @@
   animation: animate 20s linear infinite;
 }
 
-.projects__websites:hover {
+.content_projects_websites:hover {
   transform: scale(1000px);
 }
 
-.info {
+.content_about {
   justify-content: space-evenly;
   flex-direction: column;
   align-content: center;
   display: flex;
   align-items: center;
   padding: 20px;
+  background: transparent;
 }
 
-.info__intro {
+.content_about_intro {
   color: red;
   font-size: 25px;
   display: flex;
@@ -46,21 +48,21 @@
   max-width: 50vw;
 }
 
-.info__bioagraphy {
+.content_about_biography {
   text-align: center;
   color: red;
   font-size: 25px;
   max-width: 50vw;
 }
 
-.info__resume-pic {
-  width: 35vw;
+.content_about_image {
+  width: 21vw;
   height: 35vh;
   border-radius: 18%;
   max-width: 400px;
 }
 
-.skill__sets {
+.content_skills_list {
   font-size: 26px;
   gap: 20px;
   align-items: center;
@@ -69,12 +71,14 @@
   justify-content: center;
   display: flex;
   color: red;
+  background: transparent;
 }
 
-.footer__copyright {
+.content_footer_text {
   justify-content: center;
   display: flex;
   color: red;
+  background: transparent;
 }
 
 @keyframes animate {
@@ -88,7 +92,7 @@
 }
 
 @media screen and (max-width: 840px) {
-  .projects__image {
+  .content_projects_image {
     justify-content: center;
     display: flex;
     border-radius: 50%;
@@ -96,7 +100,7 @@
     height: 135px;
   }
 
-  .projects__websites {
+  .content_projects_websites {
     width: 135px;
     height: 135px;
     border-radius: 50%;
@@ -105,24 +109,24 @@
     animation: animate 20s linear infinite;
   }
 
-  .info {
+  .content_about {
     flex-direction: column;
     padding: 10px 0px 0px;
   }
-  .info__intro {
+  .content_about_intro {
     font-size: 18px;
   }
 
-  .info__bioagraphy {
+  .content_about_biography {
     font-size: 18px;
   }
 
-  .info__resume-pic {
+  .content_about_image {
     width: 173px;
     height: 154px;
   }
 
-  .skill__sets {
+  .content_skills_list {
     font-size: 17px;
   }
 }

@@ -1,0 +1,46 @@
+import { useEffect, useRef } from "react";
+
+const Stars = () => {
+  const starsLayerRef = useRef(null);
+
+  useEffect(() => {
+    if (!starsLayerRef.current) {
+      return;
+    }
+
+    const numberOfStars = 800;
+    const starsCreated = [];
+
+    for (let i = 0; i < numberOfStars; i++) {
+      const star = document.createElement("div");
+      star.classList.add("background_star");
+
+      const size = Math.random() * 3 + 1;
+      const twinkleDuration = Math.random() * 3 + 2;
+      const driftDuration = Math.random() * 22 + 24;
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.setProperty("--twinkle-duration", `${twinkleDuration}s`);
+      star.style.setProperty("--drift-duration", `${driftDuration}s`);
+
+      starsLayerRef.current.appendChild(star);
+      starsCreated.push(star);
+    }
+
+    return () => {
+      starsCreated.forEach((star) => star.remove());
+    };
+  }, []);
+
+  return (
+    <div
+      ref={starsLayerRef}
+      className="background_stars_layer"
+      aria-hidden="true"
+    />
+  );
+};
+
+export default Stars;

@@ -1,0 +1,11 @@
+{
+  "name": "profolio-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix portfolio-react run dev:root",
+    "start": "npm --prefix portfolio-react run start",
+    "build": "npm --prefix portfolio-react run build",
+    "deploy": "npm --prefix portfolio-react run deploy",
+    "test": "npm --prefix portfolio-react run test"
+  }
+}
