@@ -10,6 +10,18 @@
   overflow-x: hidden;
 }
 
+.background_page_zooming {
+  animation: page_fade_out 0.75s ease forwards;
+}
+
+.background_page_zooming_out {
+  animation: page_fade_out 0.75s ease forwards;
+}
+
+.background_page_arriving {
+  animation: page_fade_in 0.45s ease both;
+}
+
 .background_stars_layer {
   position: fixed;
   inset: 0;
@@ -33,6 +45,10 @@
     movestars var(--drift-duration, 32s) infinite linear;
 }
 
+.background_stars_layer_paused .background_star {
+  animation-play-state: paused;
+}
+
 @keyframes twinkle {
   100%,
   0% {
@@ -49,5 +65,27 @@
   }
   to {
     transform: translateY(90vh);
+  }
+}
+
+@keyframes page_fade_out {
+  from {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  to {
+    opacity: 0;
+    filter: brightness(0.45);
+  }
+}
+
+@keyframes page_fade_in {
+  from {
+    opacity: 0;
+    filter: brightness(0.55) blur(2px);
+  }
+  to {
+    opacity: 1;
+    filter: brightness(1) blur(0);
   }
 }

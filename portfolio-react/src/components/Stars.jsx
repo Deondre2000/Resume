@@ -9,8 +9,21 @@ const Stars = () => {
       return;
     }
 
-    const numberOfStars = 800;
+    const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
+    const numberOfStars = isSmallScreen ? 140 : 260;
     const starsCreated = [];
+
+    const handleVisibilityChange = () => {
+      if (!starsLayerRef.current) {
+        return;
+      }
+      starsLayerRef.current.classList.toggle(
+        "background_stars_layer_paused",
+        document.hidden,
+      );
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
 
     for (let i = 0; i < numberOfStars; i++) {
       const star = document.createElement("div");
@@ -31,6 +44,7 @@ const Stars = () => {
     }
 
     return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
       starsCreated.forEach((star) => star.remove());
     };
   }, []);

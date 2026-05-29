@@ -9,6 +9,9 @@ const Skills = () => {
         <li>JavaScript</li>
         <li>Hypertext Markup Language / HTML</li>
         <li>Cascading Style Sheets / CSS</li>
+        <li>React</li>
+        <li>API Integration</li>
+        <li>Git Version Control</li>
       </ul>
     </div>
   );
