@@ -23,8 +23,6 @@
     "dev:root": "cross-env PORT=3001 react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -47,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "cross-env": "^10.1.0",
-    "gh-pages": "^6.3.0"
+    "cross-env": "^10.1.0"
   }
 }
