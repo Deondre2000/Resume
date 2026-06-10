@@ -1,7 +1,6 @@
 import React from "react";
 import "../blocks/Nav.css";
 import linked from "../assets/linked-in.webp";
-import gmail from "../assets/gmail.webp";
 import github from "../assets/github.png";
 
 const Nav = () => {
