@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.39601c8f.css",
-    "main.js": "/Resume/static/js/main.31ed6c22.js",
+    "main.css": "/Resume/static/css/main.8b277fae.css",
+    "main.js": "/Resume/static/js/main.c44803b8.js",
     "static/media/navy-pic2.jpg": "/Resume/static/media/navy-pic2.09e595d879944bfb77f6.jpg",
+    "static/media/Todo-app.png": "/Resume/static/media/Todo-app.7f5b42c56f76e2939ec2.png",
+    "static/media/news.png": "/Resume/static/media/news.7d820ee5595a27944544.png",
     "static/media/spots-pic.png": "/Resume/static/media/spots-pic.94e2324f683313c439b8.png",
     "static/media/resume-pic.jpg": "/Resume/static/media/resume-pic.5f0b3b65769393dd9080.jpg",
     "static/media/coffee-pic.png": "/Resume/static/media/coffee-pic.0f0af2df4d66e9a2fde2.png",
     "static/media/planet.jpg": "/Resume/static/media/planet.dcc45b012793619add68.jpg",
+    "static/media/paridise.jpg": "/Resume/static/media/paridise.4543c64dc416c418894a.jpg",
+    "static/media/github.png": "/Resume/static/media/github.1ff6d9646165b7f34af9.png",
+    "static/media/linked-in.webp": "/Resume/static/media/linked-in.8e6483685e7a734156d3.webp",
     "index.html": "/Resume/index.html",
-    "main.39601c8f.css.map": "/Resume/static/css/main.39601c8f.css.map",
-    "main.31ed6c22.js.map": "/Resume/static/js/main.31ed6c22.js.map"
+    "main.8b277fae.css.map": "/Resume/static/css/main.8b277fae.css.map",
+    "main.c44803b8.js.map": "/Resume/static/js/main.c44803b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.39601c8f.css",
-    "static/js/main.31ed6c22.js"
+    "static/css/main.8b277fae.css",
+    "static/js/main.c44803b8.js"
   ]
 }
