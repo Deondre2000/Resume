@@ -1,44 +1,11 @@
-.profiles_section {
+.projects_section {
   padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
   background: transparent;
 }
 
-.profiles_planet_frame {
-  width: clamp(190px, 28vw, 360px);
-  aspect-ratio: 1 / 1;
-  margin: 0 auto 16px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  border-radius: 50%;
-  overflow: hidden;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  position: relative;
-  box-shadow:
-    0 0 28px rgba(255, 255, 255, 0.1),
-    0 10px 22px rgba(0, 0, 0, 0.35);
-}
-
-.profiles_planet_image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transform: scale(1);
-  transform-origin: center;
-  transition: transform 0.35s ease;
-  filter: contrast(1.05) brightness(1.01);
-}
-
-.profiles_planet_frame:hover .profiles_planet_image {
-  transform: scale(1.04);
-  cursor: pointer;
-}
-
-.profiles_title {
+.projects_title {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 40px;
@@ -48,14 +15,15 @@
   padding-bottom: 15px;
 }
 
-.profiles_grid {
+.projects_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 40px;
+  padding: 48px;
 }
 
-.profiles_card {
+.projects_card {
   background: transparent;
   border-radius: 12px;
   padding: 25px;
@@ -69,19 +37,21 @@
     0 10px 22px rgba(0, 0, 0, 0.35);
 }
 
-.profiles_card:hover {
+.projects_card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgb(255, 255, 255);
   cursor: pointer;
 }
 
-.profiles_card:focus-visible {
+.projects_card:focus-visible {
   transform: translateY(-5px);
-  box-shadow: 0 0 0 2px #84bafa, 0 15px 30px rgb(255, 255, 255);
+  box-shadow:
+    0 0 0 2px #84bafa,
+    0 15px 30px rgb(255, 255, 255);
   outline: none;
 }
 
-.profiles_card::before {
+.projects_card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -94,11 +64,11 @@
   transition: transform 0.3s ease;
 }
 
-.profiles_card:hover::before {
+.projects_card:hover::before {
   transform: scaleX(1);
 }
 
-.profiles_image {
+.projects_image {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -106,19 +76,19 @@
   margin-bottom: 15px;
 }
 
-.profiles_card_title {
+.projects_card_title {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #fff;
 }
 
-.profiles_card_description {
+.projects_card_description {
   color: #d6d6d6;
   margin-bottom: 15px;
   line-height: 1.5;
 }
 
-.profiles_card_link {
+.projects_card_link {
   display: inline-block;
   padding: 8px 20px;
   background: #4a90e2;
@@ -128,18 +98,18 @@
   transition: background 0.3s ease;
 }
 
-.profiles_card_link:hover {
+.projects_card_link:hover {
   background: #357abd;
 }
 
-.profiles_tags {
+.projects_tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin: 12px 0;
 }
 
-.profiles_tag {
+.projects_tag {
   padding: 4px 12px;
   background: #111;
   color: #e6e6e6;
@@ -148,17 +118,17 @@
   transition: all 0.2s ease;
 }
 
-.profiles_tag:hover {
+.projects_tag:hover {
   background: #1a1a1a;
 }
 
-.profiles_links {
+.projects_links {
   display: flex;
   gap: 12px;
   margin-top: 20px;
 }
 
-.profiles_github_link {
+.projects_github_link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -171,12 +141,12 @@
   transition: all 0.2s ease;
 }
 
-.profiles_github_link:hover {
+.projects_github_link:hover {
   transform: translateY(-2px);
   opacity: 0.9;
 }
 
-.profiles_status {
+.projects_status {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -186,25 +156,25 @@
   font-weight: 500;
 }
 
-.profiles_completed {
+.projects_completed {
   background: #111;
   color: #7ad39f;
 }
 
-.profiles_in_progress {
+.projects_in_progress {
   background: #111;
   color: #ffd6a3;
 }
 
-.profiles_planned {
+.projects_planned {
   background: #111;
   color: #cfcfcf;
 }
 
-.projects_page_header {
+.projects_page_footer {
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: 16px;
+  justify-content: center;
+  margin-top: 28px;
 }
 
 .projects_page_section {
@@ -274,29 +244,6 @@
 .projects_back_button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
-}
-
-.profiles_planet_entering {
-  animation: planet_dive_in 0.75s cubic-bezier(0.22, 0.79, 0.26, 1) forwards;
-  z-index: 20;
-}
-
-@keyframes planet_dive_in {
-  0% {
-    transform: scale(1);
-    filter: brightness(1);
-    opacity: 1;
-  }
-  55% {
-    transform: scale(1.7);
-    filter: brightness(1.08);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(8);
-    filter: brightness(0.78);
-    opacity: 0;
-  }
 }
 
 @keyframes project_zoom_out {

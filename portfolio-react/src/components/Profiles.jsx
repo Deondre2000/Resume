@@ -1,23 +1,19 @@
 import React from "react";
-import styles from "../blocks/Profiles.module.css";
+import "../blocks/profile.css";
 import planetPic from "../assets/planet.jpg";
 
 export const Profiles = ({ onPlanetClick, isTransitioning = false }) => {
   return (
-    <section className={styles.profiles_section}>
-      <h2 className={styles.profiles_title}>Open Projects</h2>
+    <section className="profiles_section">
+      <h2 className="profiles_title">Click Planet To Open Projects</h2>
       <button
         type="button"
-        className={`${styles.profiles_planet_frame} ${isTransitioning ? styles.profiles_planet_entering : ""}`}
+        className={`profiles_planet_frame ${isTransitioning ? "profiles_planet_entering" : ""}`}
         onClick={onPlanetClick}
         aria-label="Open all projects page"
         disabled={isTransitioning}
       >
-        <img
-          src={planetPic}
-          alt="Planet"
-          className={styles.profiles_planet_image}
-        />
+        <img src={planetPic} alt="Planet" className="profiles_planet_image" />
       </button>
     </section>
   );

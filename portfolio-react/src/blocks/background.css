@@ -30,11 +30,6 @@
   z-index: 3;
 }
 
-.background_page > :not(.background_stars_layer) {
-  position: relative;
-  z-index: 1;
-}
-
 .background_star {
   position: absolute;
   background: white;
