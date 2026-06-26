@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Bitcount";
+  src: url("../fonts/Bitcount.ttf") format("truetype");
+  font-display: swap;
+}
+
 .content_projects {
   padding: 0px;
   justify-content: space-around;
@@ -38,7 +44,7 @@
 }
 
 .content_about_intro {
-  color: red;
+  color: rgb(241, 207, 207);
   font-size: 25px;
   display: flex;
   flex-direction: row;
@@ -46,17 +52,19 @@
   align-content: center;
   align-items: center;
   max-width: 50vw;
+  font-family: "Bitcount", sans-serif;
 }
 
 .content_about_biography {
   text-align: center;
-  color: red;
+  color: rgb(241, 207, 207);
   font-size: 25px;
   max-width: 50vw;
+  font-family: "Bitcount", sans-serif;
 }
 
 .content_about_image {
-  width: 21vw;
+  width: 27vw;
   height: 35vh;
   border-radius: 18%;
   max-width: 400px;
@@ -70,8 +78,9 @@
   flex-direction: row;
   justify-content: center;
   display: flex;
-  color: red;
+  color: rgb(241, 207, 207);
   background: transparent;
+  font-family: "Bitcount", sans-serif;
 }
 
 .content_skills_title {
@@ -84,6 +93,7 @@
   display: flex;
   color: red;
   background: transparent;
+  font-family: "Bitcount", sans-serif;
 }
 
 .content_skills_list_item {
@@ -98,8 +108,9 @@
 .content_footer_text {
   justify-content: center;
   display: flex;
-  color: red;
+  color: rgb(241, 207, 207);
   background: transparent;
+  font-family: "Bitcount", sans-serif;
 }
 
 @keyframes animate {
